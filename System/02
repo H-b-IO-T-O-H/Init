@@ -1,0 +1,4 @@
+# 02. What command can you use to rename your system?
+sudo hostname new_name
+
+# after reboot name won't be changed

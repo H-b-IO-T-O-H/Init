@@ -1,0 +1,2 @@
+#Thanks to the previous question and the reverse DNS find the name of your host:
+#ifconfig en0 | grep "inet " | awk '{print $2}' | nslookup | grep name | awk '{print $4}'

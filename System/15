@@ -1,0 +1,4 @@
+#Find the command that kills the background command’s process
+pkill tail
+# pkill PID - SIGTERM send to CPU
+# kill -9 PID - SIGKILL send to CPU - this signal couldn't be intercepted

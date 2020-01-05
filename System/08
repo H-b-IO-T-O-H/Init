@@ -1,0 +1,3 @@
+#What file contains the RSA keys of systems that are authorized to connect via SSH?
+~/.ssh/authorized_keys
+# |1| - hashing algorithm - here HMAC-SHA1, |KEY for HMAC| , |Hash| 

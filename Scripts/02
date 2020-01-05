@@ -1,0 +1,9 @@
+#!/bin/bash
+#sudo useradd kek
+User=$1
+echo "Current users:"
+cat /etc/passwd | grep /home/ | cut -f1 -d:
+sudo pkill -u $User
+sudo userdel $User
+echo "After delete:"
+cat /etc/passwd | grep /home/ | cut -f1 -d:

@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Busket";
+Name=$1;
+if [ -f "$Name" ]; then
+	if [ -d basket ]; then
+		mv $Name basket;
+	else
+		mkdir basket;
+		mv $Name basket;
+	fi
+	cd basket;
+	if [ -f basket_log ]; then
+		echo $Name, $(date | cut -f1,2,3,4 -d' ') >> basket_log;
+	else
+		echo "Delete information:  " >> basket_log;
+		echo $Name, $(date | cut -f1,2,3,4 -d' ') >> basket_log;
+	fi
+else
+	echo "Error: input file";
+fi
